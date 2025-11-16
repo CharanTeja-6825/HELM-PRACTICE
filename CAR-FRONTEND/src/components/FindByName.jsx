@@ -15,7 +15,7 @@ function FindByName() {
         setCar(null)
         setMessage("")
         try {
-            const res = await axios.get(`${backendUrl}/search?name=${name}`)
+            const res = await axios.get(`${backendUrl}/car-api/search?name=${name}`)
             let data = res.data
             if (Array.isArray(data)) {
                 data = data.length > 0 ? data[0] : null

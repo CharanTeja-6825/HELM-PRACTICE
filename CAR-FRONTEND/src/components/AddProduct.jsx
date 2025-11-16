@@ -25,7 +25,7 @@ function AddCar() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post(`${backendUrl}/cars`, formData);
+            const res = await axios.post(`${backendUrl}/car-api/cars`, formData);
             setMessage("Car added successfully!");
             setFormData({
                 carName: "",

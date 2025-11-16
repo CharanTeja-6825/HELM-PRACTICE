@@ -10,7 +10,7 @@ function Manage() {
 
     const fetchCars = async () => {
         try {
-            const res = await axios.get(`${backendUrl}/all`)
+            const res = await axios.get(`${backendUrl}/car-api/all`)
             setCars(res.data)
         } catch (err) {
             setMessage("Error fetching cars.")
